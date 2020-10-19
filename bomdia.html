@@ -52,7 +52,7 @@ h1 {
 .clock {
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    
     font-size: 1.2em;
     color: #dadada;
     /* padding-left: 20px; */
@@ -77,13 +77,14 @@ h1 {
     /* border-right: 2px solid #2e425d; */
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
+    font-weight: bold;
     color: #dadada;
 }
 .greet{
     
     min-width: 162px;
     /* padding-right: 30px; */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
     color: #dadada;
 }
@@ -131,11 +132,11 @@ else{
 }
 hrs = today.getHours();
 if (hrs < 12)
-        greet = 'GOOD MORNING';
+        greet = 'Bom dia, Amanda';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'GOOD AFTERNOON';
+        greet = 'Boa Tarde, Amanda';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'BOA NOITE, AMANDA';
+        greet = 'Boa Noite, Amanda';
 // console.log(today.toLocaleTimeString());
 document.getElementById('greet').innerHTML = greet;
 document.getElementById('hour').innerHTML = hour;
